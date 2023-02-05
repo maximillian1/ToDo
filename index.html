@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo Avançado</title>
+    <title>Gerenciador de tarefas</title>
     <!-- CSS do projeto -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome -->
@@ -15,7 +15,7 @@
 <body>
     <div class="todo-container">
         <header>
-            <h1>ToDo Avançado</h1>
+            <h1>Gerenciador de tarefas</h1>
         </header>
         <form id="todo-form">
             <p>Adicione a sua tarefa:</p>
@@ -26,7 +26,7 @@
                 </button>
             </div>
         </form>
-        <form id="edit-form">
+        <form id="edit-form" class="hide"> <!-- class: hide -->
             <p>Edite a sua tarefa:</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -54,9 +54,10 @@
                     <option value="todo">A fazer</option>
                 </select>
             </div>
+        </div>
             <div id="todo-list">
 
-                <div class="todo">
+<!-- TEMPLATE        <div class="todo done">
                     <h3>Estou fazendo alguma coisa...</h3>
                     <button class="finish-todo">
                         <i class="fa-solid fa-check"></i>
@@ -80,10 +81,9 @@
                     <button class="remove-todo">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
-                </div>
+                </div> -->
 
             </div>
-        </div>
     </div>
 </body>
 </html>
